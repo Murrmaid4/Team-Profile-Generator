@@ -9,6 +9,14 @@ const fs = require("fs");
 // we want to create a function that starts the app 
 
 menu = () => {
+    newEmployee = () => {
+
+
+
+
+
+        
+    }
     createManager = () => {
         inquirer.prompt([
             {
