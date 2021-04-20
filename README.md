@@ -54,6 +54,9 @@ The tech used on this project include Javascript, Node, Inquirer and Jest, Githu
 ## Images
 ![screenshot-1](https://user-images.githubusercontent.com/78389456/115448932-42322800-a1e8-11eb-9594-f14c6d5eb0f4.jpg)
 
+Here's also a video link demonstrating the functionality 
+https://drive.google.com/file/d/1nq6_22Gp43hMUpH3gwBaIE8Vaz6E5zNp/view
+
  
 ## Tests
  if you run npm run test, the tests for each class will run and should pass. 
