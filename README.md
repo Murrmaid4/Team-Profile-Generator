@@ -4,7 +4,7 @@
 
 ## Description
 
-This application allows users to quickly and easily make a profile for their work team of interns/engineers and managersl. 
+This application allows users to quickly and easily make a profile for their work team of interns/engineers and managers. 
 
 ## Table of Contents 
 
@@ -19,7 +19,7 @@ This application allows users to quickly and easily make a profile for their wor
 
 ## Installation
 
-node inquirer and jest 
+use npm i to downoload dependencies 
  
 ## Usage
 In the intergrated terminal for this code, with node inquirer, run the code node index.js to start the application, answer the questions as they pop up and then once you've finished, your new html file is generated in the dist folder. 
