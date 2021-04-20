@@ -45,24 +45,46 @@ newManager = () => {
                 {
                     type: "input",
                     name: "name",
-                    message: "Please enter manager's name"
-                    //input validation here for each question check npm documentation
+                    message: "Please enter manager's name",
+                    validate: data => {
+                        if(data !== ""){
+                            return true
+                        } 
+                        return "Please enter a valid name."
+                    }
                 },
                 {
                     type: "input",
                     name: "id",
-                    message: "Enter manager's id"
+                    message: "Enter manager's id",
+                    validate: data => {
+                        if(data !== ""){
+                            return true
+                        } 
+                        return "Please enter a valid ID."
+                    }
                 },
                 {
                     type: "input",
                     name: "email",
-                    message: "What is the team manager's email?"
+                    message: "What is the team manager's email?",
+                    validate: data => {
+                        if(data.match(/\S+@\S+\.\S+/)) {
+                            return true
+                        } 
+                        return "Please enter a valid email address."
+                    }
                 },
                 {
                     type: "input",
                     name: "officeNumber",
-                    message: "Enter manager's office number"
-                },
+                    message: "Enter manager's office number",
+                    validate: data => {
+                        if(data !== ""){
+                            return true
+                        } 
+                        return "Please enter a valid office number."}
+                    }
             ]).then(({name, id, email, officeNumber}) => {
                 //this promise then pulls the data from the responses
                 const emp = new Manager(name, id, email, officeNumber)
@@ -80,23 +102,42 @@ newManager = () => {
             {
                 type: "input",
                 name: "name",
-                message: "Please enter Engineer's name"
-                //input validation here for each question check npm documentation
+                message: "Please enter Engineer's name",
+                validate: data => {
+                    if(data !== ""){
+                        return true
+                    } 
+                    return "Please enter a valid name."}
             },
             {
                 type: "input",
                 name: "id",
-                message: "Enter employee id"
+                message: "Enter employee id",
+                validate: data => {
+                    if(data !== ""){
+                        return true
+                    } 
+                    return "Please enter a valid ID."}
             },
             {
                 type: "input",
                 name: "email",
-                message: "What is the engineer's email?"
+                message: "What is the engineer's email?",
+                validate: data => {
+                    if(data.match(/\S+@\S+\.\S+/)) {
+                        return true
+                    } 
+                    return "Please enter a valid email address."}
             },
             {
                 type: "input",
                 name: "Github",
-                message: "Enter Engineer's Github Username"
+                message: "Enter Engineer's Github Username",
+                validate: data => {
+                    if(data !== ""){
+                        return true
+                    } 
+                    return "Please enter a valid username."}
             },
            
 
@@ -112,23 +153,43 @@ newManager = () => {
             {
                 type: "input",
                 name: "name",
-                message: "Please enter Intern's name"
-                //input validation here for each question check npm documentation
+                message: "Please enter Intern's name",
+                validate: data => {
+                    if(data !== ""){
+                        return true
+                    } 
+                    return "Please enter a valid name."}
+             
             },
             {
                 type: "input",
                 name: "id",
-                message: "Enter employee id"
+                message: "Enter employee id",
+                validate: data => {
+                    if(data !== ""){
+                        return true
+                    } 
+                    return "Please enter a valid ID."}
             },
             {
                 type: "input",
                 name: "email",
-                message: "What is the Intern's email?"
+                message: "What is the Intern's email?",
+                validate: data => {
+                    if(data.match(/\S+@\S+\.\S+/)) {
+                        return true
+                    } 
+                    return "Please enter a valid email address."}
             },
             {
                 type: "input",
                 name: "school",
-                message: "Enter Intern's school."
+                message: "Enter Intern's school.",
+                validate: data => {
+                    if(data !== ""){
+                        return true
+                    } 
+                    return "Please enter a valid school."}
             },
            
 
